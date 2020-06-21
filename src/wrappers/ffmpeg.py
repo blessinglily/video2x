@@ -284,4 +284,4 @@ class Ffmpeg:
         # turn all list elements into string to avoid errors
         execute = [str(e) for e in execute]
         Avalon.debug_info(f'Executing: {shlex.join(execute)}')
-        return subprocess.Popen(execute)
+        return subprocess.Popen(execute, check=True).returncode
