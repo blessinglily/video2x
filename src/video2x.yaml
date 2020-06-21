@@ -53,7 +53,7 @@ waifu2x_converter_cpp:
   #output: null # path to output image file or directory  (you should use the full path)
   #input: null # (required) path to input image file or directory (you should use the full path)
 waifu2x_ncnn_vulkan:
-  path: '%LOCALAPPDATA%\video2x\waifu2x-ncnn-vulkan\waifu2x-ncnn-vulkan'
+  path: '/content/waifu2x-ncnn-vulkan-20200606-linux/waifu2x-ncnn-vulkan'
   v: null # verbose output
   #i: null # input-path: input image path (jpg/png) or directory
   #o: null # output-path: output image path (png) or directory
@@ -111,7 +111,7 @@ anime4kcpp:
   deviceID: 0 # Specify the device ID (unsigned int [=0])
   codec: mp4v # Specify the codec for encoding from mp4v(recommended in Windows), dxva(for Windows), avc1(H264, recommended in Linux), vp09(very slow), hevc(not support in Windowds), av01(not support in Windowds) (string [=mp4v])
 ffmpeg:
-  ffmpeg_path: '%LOCALAPPDATA%\video2x\ffmpeg-latest-win64-static\bin'
+  ffmpeg_path: 'ffmpeg'
   intermediate_file_name: 'intermediate.mkv'
   # Step 1: Frame Extraction
   # extract all frames from original input into temporary directory
